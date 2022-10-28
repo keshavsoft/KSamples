@@ -2,21 +2,14 @@ let fs = require("fs");
 
 var randomWords = require('random-words');
 
-
 let StartFunc = async () => {
-    let LocalFilePath = "KData/JSON/1018/Data/Masters/Accounts.json";
+    let LocalFilePath = "KData/JSON/2022/Data/Masters/Customers.json";
 
-    let LocalDataFromJSON = await fs.readFileSync(LocalFilePath);
-    let LocalJsonData = JSON.parse(LocalDataFromJSON);
-
-    let k2 = {};
-    k2.AccountsNames = {};
+    let k2 = { CustomerNames: {} };
 
     randomWords(50000).forEach((LoopItem, LoopIndex) => {
-        k2.AccountsNames[LoopIndex + 1] = { CustomerName: LoopItem };
+        k2.CustomerNames[LoopIndex + 1] = { CustomerName: LoopItem };
     });
-
-    //console.log("LocalJsonData : ", LocalDataToInsert);
 
     await fs.writeFileSync(LocalFilePath, JSON.stringify(k2));
 

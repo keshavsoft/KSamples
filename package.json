@@ -1,0 +1,22 @@
+{
+  "name": "ksamples",
+  "version": "1.0.0",
+  "description": "Sample codes on NodeJs",
+  "main": "Insert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshavsoft/KSamples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keshavsoft/KSamples/issues"
+  },
+  "homepage": "https://github.com/keshavsoft/KSamples#readme",
+  "dependencies": {
+    "random-words": "^1.2.0"
+  }
+}
